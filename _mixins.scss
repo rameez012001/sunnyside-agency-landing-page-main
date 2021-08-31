@@ -1,0 +1,12 @@
+@mixin default {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-size: 62.5%;
+}
+@mixin flex($fdrctn,$jcnt,$aitms) {
+    display: flex;
+    flex-direction:$fdrctn;
+    justify-content:$jcnt;
+    align-items:$aitms;
+}

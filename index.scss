@@ -1,0 +1,52 @@
+@import  'variables';
+@import 'font';
+@import 'mixins';
+html,body{
+    @include default;
+}
+.container{
+    @include flex(column,unset,unset);
+    font-size: 1.6rem;
+}
+main{
+    background: url('/css/images/desktop/image-header.jpg') no-repeat;
+    background-size:contain;
+    color: $white;
+    height: 100vh;
+    nav{
+        @include flex(row,space-between,flex-end);
+        ul{
+            list-style: none;
+            padding: 1em 1em;
+            &:last-child{
+                @include flex(row,unset,unset);
+                font-family: $barlow;
+                li{
+                    padding:.5em 1em;
+                    &:hover{
+                        background-color:$white;
+                        color:black;
+                        border-radius: 3.3rem;
+                        font-weight: 550
+                    }
+                }
+            }
+        }
+        
+    }
+    header{
+       text-align: center;
+       letter-spacing: 1em;
+       font-family: $fraunces;
+       font-size: 1.7rem;
+       font-weight:900;
+    }
+    picture{
+        @include flex(row,center,unset);
+        position: relative;
+        img{
+            position:absolute;
+            top: 15rem;
+        }
+    }
+}
