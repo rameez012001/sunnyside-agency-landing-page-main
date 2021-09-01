@@ -25,8 +25,8 @@ html, body {
 }
 
 main {
-  background: url("/css/images/desktop/image-header.jpg") no-repeat;
-  background-size: 100%;
+  background: url("/css/images/icon-arrow-down.svg") no-repeat center, url("/css/images/desktop/image-header.jpg") no-repeat;
+  background-size: 1.5em 5.5em,100vw 100%;
   color: white;
   height: 100vh;
 }
@@ -85,28 +85,5 @@ main header {
   letter-spacing: 1em;
   font-family: "Fraunces", serif;
   font-size: 1.7rem;
-  font-weight: 900;
-}
-
-main picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: unset;
-      -ms-flex-align: unset;
-          align-items: unset;
-  position: relative;
-}
-
-main picture img {
-  position: absolute;
-  top: 15rem;
 }
 /*# sourceMappingURL=index.css.map */

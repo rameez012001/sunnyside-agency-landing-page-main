@@ -9,8 +9,8 @@ html,body{
     font-size: 1.6rem;
 }
 main{
-    background: url('/css/images/desktop/image-header.jpg') no-repeat;
-    background-size:100%;
+    background: url('/css/images/icon-arrow-down.svg') no-repeat center,url('/css/images/desktop/image-header.jpg') no-repeat;
+    background-size:1.5em 5.5em,100vw 100%;  
     color: $white;
     height: 100vh;
     nav{
@@ -39,14 +39,5 @@ main{
        letter-spacing: 1em;
        font-family: $fraunces;
        font-size: 1.7rem;
-       font-weight:900;
-    }
-    picture{
-        @include flex(row,center,unset);
-        position: relative;
-        img{
-            position:absolute;
-            top: 15rem;
-        }
     }
 }
