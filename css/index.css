@@ -21,7 +21,12 @@ html, body {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
           align-items: unset;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -85,5 +90,113 @@ main header {
   letter-spacing: 1em;
   font-family: "Fraunces", serif;
   font-size: 1.7rem;
+}
+
+.tyb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tyb aside {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 0 5em;
+}
+
+.tyb aside h1 {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 3.5rem;
+}
+
+.tyb aside p {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  padding: 2em 0;
+}
+
+.tyb aside a {
+  color: #23303e;
+  border-bottom: 0.5rem solid #fe7867;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+}
+
+.tyb picture {
+  width: 100%;
+  -ms-flex-preferred-size: 8 0%;
+      flex-basis: 8 0%;
+  height: 85vh;
+}
+
+.tyb picture img {
+  width: 100%;
+  height: 85vh;
+}
+
+.sra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sra picture {
+  width: 100%;
+  height: 85vh;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.sra picture img {
+  width: 100%;
+  height: 85vh;
+}
+
+.sra aside {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 0 5em;
+}
+
+.sra aside h1 {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 3.5rem;
+}
+
+.sra aside p {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  padding: 2em 0;
+}
+
+.sra aside a {
+  color: #23303e;
+  border-bottom: 0.5rem solid #fad400;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
 }
 /*# sourceMappingURL=index.css.map */

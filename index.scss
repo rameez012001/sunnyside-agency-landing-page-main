@@ -6,7 +6,11 @@ html,body{
 }
 .container{
     @include flex(column,unset,unset);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 main{
     background: url('/css/images/icon-arrow-down.svg') no-repeat center,url('/css/images/desktop/image-header.jpg') no-repeat;
@@ -39,5 +43,72 @@ main{
        letter-spacing: 1em;
        font-family: $fraunces;
        font-size: 1.7rem;
+    }
+}
+.tyb{
+    @include flex(initial,unset,center);
+    aside{
+        flex-basis: 50%;
+        padding: 0 5em;
+        h1{
+            color:$test4;
+            font-family: $fraunces;
+            font-size: 3.5rem;
+        }
+        p{
+            color: $test5;
+            font-family: $barlow;
+            padding: 2em 0;
+        }
+        a{
+            color: $test4;
+            border-bottom: .5rem solid $red;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: $fraunces;
+        }
+    }
+    picture{
+        width: 100%;
+        flex-basis: 8 0%;
+        height: 85vh;
+        img{
+            width: 100%;
+            height: 85vh;
+        }
+    }
+}
+.sra{
+    @include flex(initial,center,center);
+    picture{
+        width: 100%;
+        height: 85vh;
+        flex-basis: 80%;
+        img{
+            width: 100%;
+            height: 85vh;
+        }
+    }
+    aside{
+        flex-basis: 50%;
+        padding: 0 5em;
+        h1{
+            
+            color:$test4;
+            font-family: $fraunces;
+            font-size: 3.5rem;
+        }
+        p{
+            color: $test5;
+            font-family: $barlow;
+            padding: 2em 0;
+        }
+        a{
+            color: $test4;
+            border-bottom: .5rem solid $Yellow;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: $fraunces;
+        }
     }
 }
