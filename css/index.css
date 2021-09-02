@@ -30,7 +30,7 @@ html, body {
 }
 
 main {
-  background: url("/css/images/icon-arrow-down.svg") no-repeat center, url("/css/images/desktop/image-header.jpg") no-repeat;
+  background: url("../css/images/icon-arrow-down.svg") no-repeat center, url("../css/images/desktop/image-header.jpg") no-repeat;
   background-size: 1.5em 5.5em,100vw 100%;
   color: white;
   height: 100vh;
