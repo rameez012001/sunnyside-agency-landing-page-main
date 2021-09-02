@@ -93,25 +93,27 @@ main header {
 }
 
 .tyb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: initial;
-  -webkit-box-direction: initial;
-      -ms-flex-direction: initial;
-          flex-direction: initial;
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .tyb aside {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   padding: 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
 }
 
 .tyb aside h1 {
@@ -132,52 +134,57 @@ main header {
   border-radius: 5px;
   text-decoration: none;
   font-family: "Fraunces", serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .tyb picture {
-  width: 100%;
-  -ms-flex-preferred-size: 8 0%;
-      flex-basis: 8 0%;
-  height: 85vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .tyb picture img {
   width: 100%;
-  height: 85vh;
+  max-width: 100%;
+  min-width: 43rem;
 }
 
 .sra {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: initial;
-  -webkit-box-direction: initial;
-      -ms-flex-direction: initial;
-          flex-direction: initial;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .sra picture {
-  width: 100%;
-  height: 85vh;
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .sra picture img {
   width: 100%;
-  height: 85vh;
+  max-width: 100%;
+  min-width: 43rem;
 }
 
 .sra aside {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   padding: 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
 }
 
 .sra aside h1 {
@@ -198,5 +205,88 @@ main header {
   border-radius: 5px;
   text-decoration: none;
   font-family: "Fraunces", serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gdpy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  height: 85vh;
+}
+
+.gdpy .grdn {
+  background: url("../css/images/desktop/image-graphic-design.jpg") no-repeat local;
+  background-size: cover;
+  color: #25564b;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.gdpy .grdn aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  height: 85vh;
+}
+
+.gdpy .grdn aside h1 {
+  font-family: "Fraunces", serif;
+  padding: .7em 0;
+}
+
+.gdpy .grdn aside p {
+  margin: 0 7em;
+  padding: .5em 0 1.9em;
+  font-family: "Barlow", sans-serif;
+}
+
+.gdpy .phty {
+  background: url("../css/images/desktop/image-photography.jpg") no-repeat local;
+  color: #19536b;
+  background-size: 110% 100%;
+  text-align: center;
+}
+
+.gdpy .phty aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  height: 85vh;
+}
+
+.gdpy .phty aside h1 {
+  font-family: "Fraunces", serif;
+  padding: .7em 0;
+}
+
+.gdpy .phty aside p {
+  margin: 0 7em;
+  padding: .5em 0 1.9em;
+  font-family: "Barlow", sans-serif;
 }
 /*# sourceMappingURL=index.css.map */

@@ -46,10 +46,11 @@ main{
     }
 }
 .tyb{
-    @include flex(initial,unset,center);
+    display: grid;
+    grid-template-columns: 50% 50%;
     aside{
-        flex-basis: 50%;
         padding: 0 5em;
+        @include flex(column,center,intitial);
         h1{
             color:$test4;
             font-family: $fraunces;
@@ -66,34 +67,33 @@ main{
             border-radius: 5px;
             text-decoration: none;
             font-family: $fraunces;
+            width: fit-content;
         }
     }
     picture{
-        width: 100%;
-        flex-basis: 8 0%;
-        height: 85vh;
+        width:fit-content;
         img{
             width: 100%;
-            height: 85vh;
+            max-width: 100%;
+            min-width: 43rem;
         }
     }
 }
 .sra{
-    @include flex(initial,center,center);
+    display: grid;
+    grid-template-columns: 50% 50%;
     picture{
-        width: 100%;
-        height: 85vh;
-        flex-basis: 80%;
+        width:fit-content;
         img{
             width: 100%;
-            height: 85vh;
+            max-width: 100%;
+            min-width: 43rem;
         }
     }
     aside{
-        flex-basis: 50%;
         padding: 0 5em;
+        @include flex(column,center,intitial);
         h1{
-            
             color:$test4;
             font-family: $fraunces;
             font-size: 3.5rem;
@@ -109,6 +109,51 @@ main{
             border-radius: 5px;
             text-decoration: none;
             font-family: $fraunces;
+            width: fit-content;
         }
+    }
+}
+.gdpy{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 85vh;   
+    .grdn{
+        background: url('../css/images/desktop/image-graphic-design.jpg') no-repeat local;
+        background-size:cover;
+        color: $gdt;
+        text-align: center;
+        justify-self: center;
+        aside{
+            @include flex(column,flex-end,intitial);
+            height: 85vh;
+        h1{
+            font-family: $fraunces;
+            padding: .7em 0;
+        }
+        p{
+            margin: 0 7em;
+            padding: .5em 0 1.9em;
+            font-family: $barlow;
+        }
+    }
+    }
+    .phty{
+        background: url('../css/images/desktop/image-photography.jpg')no-repeat local;
+        color: $pt;
+        background-size: 110% 100%;
+        text-align: center;
+        aside{
+            @include flex(column,flex-end,intitial);
+            height: 85vh;
+        h1{
+            font-family: $fraunces;
+            padding: .7em 0;
+        }
+        p{
+            margin: 0 7em;
+            padding: .5em 0 1.9em;
+            font-family: $barlow;
+        }
+    }
     }
 }
