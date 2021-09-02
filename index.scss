@@ -157,3 +157,32 @@ main{
     }
     }
 }
+.clntst{
+    @include flex(column,space-evenly,center);
+    height: 100vh;
+    header{
+        font-family: $fraunces;
+        color:$test7;
+    }
+    aside{
+        @include flex(intitial,intitial,intitial);
+        text-align: center;
+        padding: 0 2em;
+        img{
+            border-radius: 4rem;
+            width: 6rem;
+        }
+        p{
+            color:$test5;
+            font-family: $barlow;
+            &:last-child{
+            color: $test7;
+            font-family: $barlow;
+            }
+        }
+        h2{
+            font-family: $fraunces;
+        }
+
+    }
+}
