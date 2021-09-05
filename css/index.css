@@ -90,6 +90,7 @@ main header {
   letter-spacing: 1em;
   font-family: "Fraunces", serif;
   font-size: 1.7rem;
+  margin: 2em 0 0;
 }
 
 .tyb {
@@ -220,11 +221,9 @@ main header {
 
 .gdpy .grdn {
   background: url("../css/images/desktop/image-graphic-design.jpg") no-repeat local;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #25564b;
   text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 .gdpy .grdn aside {
@@ -338,6 +337,8 @@ main header {
 .clntst aside p {
   color: #5a636c;
   font-family: "Barlow", sans-serif;
+  padding: 0 1em;
+  font-size: 2rem;
 }
 
 .clntst aside p:last-child {
@@ -347,5 +348,65 @@ main header {
 
 .clntst aside h2 {
   font-family: "Fraunces", serif;
+}
+
+.gllry {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.gllry img {
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: intitial;
+      -ms-flex-pack: intitial;
+          justify-content: intitial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(134, 243, 221, 0.747);
+}
+
+footer picture:first-child {
+  margin: 2.5em 0 1em;
+}
+
+footer picture:first-child img {
+  background-color: #458c7e;
+}
+
+footer nav {
+  margin: 1.1em 0;
+}
+
+footer nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 1em;
+}
+
+footer nav li a {
+  color: #458c7e;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+
+footer picture:last-child {
+  margin: 2.5em 0 1em;
+}
+
+footer picture:last-child img {
+  padding: 0 .7em;
 }
 /*# sourceMappingURL=index.css.map */

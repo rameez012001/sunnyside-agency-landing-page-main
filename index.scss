@@ -43,6 +43,7 @@ main{
        letter-spacing: 1em;
        font-family: $fraunces;
        font-size: 1.7rem;
+       margin: 2em 0 0;
     }
 }
 .tyb{
@@ -119,10 +120,9 @@ main{
     height: 85vh;   
     .grdn{
         background: url('../css/images/desktop/image-graphic-design.jpg') no-repeat local;
-        background-size:cover;
+        background-size:100% 100%;
         color: $gdt;
-        text-align: center;
-        justify-self: center;
+        text-align: center; 
         aside{
             @include flex(column,flex-end,intitial);
             height: 85vh;
@@ -175,6 +175,8 @@ main{
         p{
             color:$test5;
             font-family: $barlow;
+            padding: 0 1em;
+            font-size:2rem;
             &:last-child{
             color: $test7;
             font-family: $barlow;
@@ -184,5 +186,41 @@ main{
             font-family: $fraunces;
         }
 
+    }
+}
+.gllry{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    img{
+        width:100%;
+    }
+}
+footer{
+    @include flex(column,intitial,center);
+    background-color:hsla(168, 82%, 74%, 0.747);
+    picture:first-child{
+        margin: 2.5em 0 1em;
+        img{
+        background-color: $ft;
+        }
+    }
+    nav{
+        margin: 1.1em 0;
+    li{
+        list-style: none;
+        display: inline;
+        padding: 0 1em;
+    a{
+        color: $ft;
+        font-family: $barlow;
+        text-decoration: none;
+    }
+}
+}
+    picture:last-child{
+        margin: 2.5em 0 1em;
+        img{
+        padding: 0 .7em;
+        }
     }
 }
