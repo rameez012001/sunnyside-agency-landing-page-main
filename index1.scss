@@ -1,0 +1,22 @@
+@import  'variables';
+@import 'font';
+@import 'mixins';
+html,body{
+    @include default;
+}
+.container{
+    @include flex(column,unset,unset);
+    font-size: 1.8rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background: url('../css/images/icon-arrow-down.svg') no-repeat center,url('../css/images/mobile/image-header.jpg') no-repeat;
+    background-size:1.5em 5.5em,100% 100%;  
+    color: $white;
+    nav{
+        @include flex(row,space-between,intitial);
+    }
+}
