@@ -4,6 +4,9 @@
 html,body{
     @include default;
 }
+.desktop{
+    display: none
+}
 .container{
     @include flex(column,unset,unset);
     font-size: 1.8rem;
@@ -15,8 +18,212 @@ html,body{
 main{
     background: url('../css/images/icon-arrow-down.svg') no-repeat center,url('../css/images/mobile/image-header.jpg') no-repeat;
     background-size:1.5em 5.5em,100% 100%;  
+    background-position:50% 70%,0;
     color: $white;
+    height: 80vh;
     nav{
         @include flex(row,space-between,intitial);
+        ul{
+            list-style: none;
+            padding: 1.7em 1em;
+        }
+        .pmenu{
+            ul{
+                display: none;
+            }
+            &:hover ul{
+                display: block;
+                position: absolute;
+                top: 5.7em;
+                left:1em;
+                transform: translate(5%,8%);
+                background-color: $white;
+                color: $test6;
+                width: 75%;
+                text-align: center;
+                li{
+                    padding: .7em;
+                    font-family:$barlow;
+                    &:hover{
+                        background-color: $Yellow;
+                        color: $test4;
+                        border-radius: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+    header{
+        font-family: $fraunces;
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: .3em;
+        margin-top: 2em;
+    }
+}
+.tyb{
+    @include flex(column,intitial,intitial);
+    flex-direction:column-reverse;
+    aside{
+        padding: 2em;
+        @include flex(column,unset,intitial);
+        text-align: center;
+        h1{
+            color:$test4;
+            font-family: $fraunces;
+            font-size: 3.5rem;
+        }
+        p{
+            color: $test5;
+            font-family: $barlow;
+            padding: 2em 0;
+        }
+        a{
+            color: $test4;
+            text-decoration:underline;
+            text-decoration-color:$red;
+            font-family: $fraunces;
+        }
+    }
+    picture{
+        img{
+            width: 100%;
+        }
+    }
+}
+.sra{
+    @include flex(column,intitial,intitial);
+    aside{
+        padding:2em;
+        text-align: center;
+        @include flex(column,center,intitial);
+        h1{
+            color:$test4;
+            font-family: $fraunces;
+            font-size: 3.5rem;
+        }
+        p{
+            color: $test5;
+            font-family: $barlow;
+            padding: 2em 0;
+        }
+        a{
+            color: $test4;
+            font-family: $fraunces;
+            text-decoration:underline;
+            text-decoration-color:$Yellow;
+        }
+    }
+    picture{
+        img{
+            width: 100%;
+        }
+    }
+}
+.gdpy{
+    @include flex(column,intitial,intitial);
+    .grdn{
+        background: url('../css/images/mobile/image-graphic-design.jpg') no-repeat local;
+        background-size:100% 100%;
+        color: $gdt;
+        text-align: center; 
+        aside{
+            @include flex(column,flex-end,intitial);
+            height: 85vh;
+            padding: 2em 0;
+        h1{
+            font-family: $fraunces;
+        }
+        p{
+            font-family: $barlow;
+        }
+    }
+    }
+    .phty{
+        background: url('../css/images/mobile/image-photography.jpg')no-repeat local;
+        color: $pt;
+        background-size: 110% 100%;
+        text-align: center;
+        aside{
+            @include flex(column,flex-end,intitial);
+            height: 85vh;
+            padding: 2em 0; 
+        h1{
+            font-family: $fraunces;
+        }
+        p{
+            font-family: $barlow;
+        }
+    }
+    }   
+}
+.clntst{
+    @include flex(column,space-evenly,center);
+    margin: 2em 0;
+    header{
+        font-family: $fraunces;
+        color:$test7;
+        font-size: 1.4rem;
+    }
+    aside{
+        padding:3em 0;
+        @include flex(column,intitial,intitial);
+        text-align: center;
+        img{
+            border-radius: 4rem;
+            width: 6rem;
+        }
+        p{
+            color:$test5;
+            font-family: $barlow;
+            padding: 0 1em;
+            font-size:2rem;
+            &:last-child{
+            color: $test7;
+            font-family: $barlow;
+            }
+        }
+        h2{
+            font-family: $fraunces;
+        }
+        .md,.cfo,.bso{
+            padding:2em 0;
+        }
+    }
+}
+.pgllry{
+    display:grid;
+    grid-template-columns: auto auto;
+    img{
+        width:100%;
+    }
+}
+footer{
+    @include flex(column,intitial,center);
+    background-color:hsla(168, 82%, 74%, 0.747);
+    picture:first-child{
+        margin: 2.5em 0 0em;
+        img{
+        background-color: $ft;
+        }
+    }
+    nav{
+        margin: 1.1em 0;
+    li{
+        list-style: none;
+        display: inline;
+        padding: 0 1em;
+    a{
+        color: $ft;
+        font-family: $barlow;
+        text-decoration: none;
+    }
+}
+}
+    picture:last-child{
+        margin: 2.5em 0;
+        img{
+        padding: 0 .5em;
+        }
     }
 }

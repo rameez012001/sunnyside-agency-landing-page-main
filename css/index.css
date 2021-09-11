@@ -29,6 +29,10 @@ html, body {
   padding: 0;
 }
 
+.phone {
+  display: none;
+}
+
 main {
   background: url("../css/images/icon-arrow-down.svg") no-repeat center, url("../css/images/desktop/image-header.jpg") no-repeat;
   background-size: 1.5em 5.5em,100vw 100%;
@@ -57,7 +61,7 @@ main nav ul {
   padding: 1em 1em;
 }
 
-main nav ul:last-child {
+main nav .dmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,11 +78,11 @@ main nav ul:last-child {
   font-family: "Barlow", sans-serif;
 }
 
-main nav ul:last-child li {
+main nav .dmenu li {
   padding: .5em 1em;
 }
 
-main nav ul:last-child li:hover {
+main nav .dmenu li:hover {
   background-color: white;
   color: black;
   border-radius: 3.3rem;

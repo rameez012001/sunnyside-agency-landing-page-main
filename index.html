@@ -7,23 +7,34 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index1.css" media="only screen and (max-width:37.5em)">
+  <link rel="stylesheet" href="./css/index.css" media="only screen and (min-width:37.5em)">
 </head>
 <body>
   <div class="container">
     <!-- sec 1 -->
     <main class="">
       <nav>
-        <ul>
+        <ul class="logo">
           <li>
             <img src="./css/images/logo.svg" alt="">
           </li>
         </ul>
-        <ul>
+        <ul class="desktop dmenu">
           <li>About</li>
           <li>Services</li>
           <li>Projects</li>
           <li>CONTACT</li>
+        </ul>
+        <ul class="phone pmenu">
+          <li><img src="./css/images/icon-hamburger.svg" alt="">
+            <ul>
+              <li>About</li>
+              <li>Services</li>
+              <li>Projects</li>
+              <li>CONTACT</li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <header>
@@ -39,15 +50,21 @@
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
           <a href="#">Learn more</a>
       </aside>
-      <picture>
+      <picture class="desktop">
         <img src="./css/images/desktop/image-transform.jpg" alt="">
+      </picture>
+      <picture class="phone">
+        <img src="./css/images/mobile/image-transform.jpg" alt="">
       </picture>
     </section>
 
     <!-- sec 3 -->
     <section class="sra">
-      <picture>
+      <picture class="desktop">
         <img src="./css/images/desktop/image-stand-out.jpg" alt="">
+      </picture>
+      <picture>
+        <img src="./css/images/mobile/image-stand-out.jpg" alt="">
       </picture>
       <aside>
         <h1>Stand out to the right audience</h1>
@@ -100,11 +117,17 @@
     </section>
 
     <!-- sec 6 -->
-    <picture class="gllry">
+    <picture class="gllry desktop">
       <img src="./css/images/desktop/image-gallery-milkbottles.jpg" alt="">
       <img src="./css/images/desktop/image-gallery-orange.jpg" alt="">
       <img src="./css/images/desktop/image-gallery-cone.jpg" alt="">
       <img src="./css/images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </picture>
+    <picture class="pgllry phone">
+      <img src="./css/images/mobile/image-gallery-milkbottles.jpg" alt="">
+      <img src="./css/images/mobile/image-gallery-orange.jpg" alt="">
+      <img src="./css/images/mobile/image-gallery-cone.jpg" alt="">
+      <img src=".\css\images\mobile\image-gallery-sugar-cubes.jpg" alt="">
     </picture>
     <!-- sec 7 -->
     <footer>

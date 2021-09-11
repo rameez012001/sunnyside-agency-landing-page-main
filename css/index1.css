@@ -7,6 +7,10 @@ html, body {
   font-size: 62.5%;
 }
 
+.desktop {
+  display: none;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,7 +36,9 @@ html, body {
 main {
   background: url("../css/images/icon-arrow-down.svg") no-repeat center, url("../css/images/mobile/image-header.jpg") no-repeat;
   background-size: 1.5em 5.5em,100% 100%;
+  background-position: 50% 70%,0;
   color: white;
+  height: 80vh;
 }
 
 main nav {
@@ -49,5 +55,372 @@ main nav {
   -webkit-box-align: intitial;
       -ms-flex-align: intitial;
           align-items: intitial;
+}
+
+main nav ul {
+  list-style: none;
+  padding: 1.7em 1em;
+}
+
+main nav .pmenu ul {
+  display: none;
+}
+
+main nav .pmenu:hover ul {
+  display: block;
+  position: absolute;
+  top: 5.7em;
+  left: 1em;
+  -webkit-transform: translate(5%, 8%);
+          transform: translate(5%, 8%);
+  background-color: white;
+  color: #818498;
+  width: 75%;
+  text-align: center;
+}
+
+main nav .pmenu:hover ul li {
+  padding: .7em;
+  font-family: "Barlow", sans-serif;
+}
+
+main nav .pmenu:hover ul li:hover {
+  background-color: #fad400;
+  color: #23303e;
+  border-radius: 2.3rem;
+}
+
+main header {
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: .3em;
+  margin-top: 2em;
+}
+
+.tyb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: intitial;
+      -ms-flex-pack: intitial;
+          justify-content: intitial;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+}
+
+.tyb aside {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  text-align: center;
+}
+
+.tyb aside h1 {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 3.5rem;
+}
+
+.tyb aside p {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  padding: 2em 0;
+}
+
+.tyb aside a {
+  color: #23303e;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fe7867;
+          text-decoration-color: #fe7867;
+  font-family: "Fraunces", serif;
+}
+
+.tyb picture img {
+  width: 100%;
+}
+
+.sra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: intitial;
+      -ms-flex-pack: intitial;
+          justify-content: intitial;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+}
+
+.sra aside {
+  padding: 2em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+}
+
+.sra aside h1 {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 3.5rem;
+}
+
+.sra aside p {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  padding: 2em 0;
+}
+
+.sra aside a {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fad400;
+          text-decoration-color: #fad400;
+}
+
+.sra picture img {
+  width: 100%;
+}
+
+.gdpy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: intitial;
+      -ms-flex-pack: intitial;
+          justify-content: intitial;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+}
+
+.gdpy .grdn {
+  background: url("../css/images/mobile/image-graphic-design.jpg") no-repeat local;
+  background-size: 100% 100%;
+  color: #25564b;
+  text-align: center;
+}
+
+.gdpy .grdn aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  height: 85vh;
+  padding: 2em 0;
+}
+
+.gdpy .grdn aside h1 {
+  font-family: "Fraunces", serif;
+}
+
+.gdpy .grdn aside p {
+  font-family: "Barlow", sans-serif;
+}
+
+.gdpy .phty {
+  background: url("../css/images/mobile/image-photography.jpg") no-repeat local;
+  color: #19536b;
+  background-size: 110% 100%;
+  text-align: center;
+}
+
+.gdpy .phty aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  height: 85vh;
+  padding: 2em 0;
+}
+
+.gdpy .phty aside h1 {
+  font-family: "Fraunces", serif;
+}
+
+.gdpy .phty aside p {
+  font-family: "Barlow", sans-serif;
+}
+
+.clntst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em 0;
+}
+
+.clntst header {
+  font-family: "Fraunces", serif;
+  color: #a7abae;
+  font-size: 1.4rem;
+}
+
+.clntst aside {
+  padding: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: intitial;
+      -ms-flex-pack: intitial;
+          justify-content: intitial;
+  -webkit-box-align: intitial;
+      -ms-flex-align: intitial;
+          align-items: intitial;
+  text-align: center;
+}
+
+.clntst aside img {
+  border-radius: 4rem;
+  width: 6rem;
+}
+
+.clntst aside p {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  padding: 0 1em;
+  font-size: 2rem;
+}
+
+.clntst aside p:last-child {
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+}
+
+.clntst aside h2 {
+  font-family: "Fraunces", serif;
+}
+
+.clntst aside .md, .clntst aside .cfo, .clntst aside .bso {
+  padding: 2em 0;
+}
+
+.pgllry {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.pgllry img {
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: intitial;
+      -ms-flex-pack: intitial;
+          justify-content: intitial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(134, 243, 221, 0.747);
+}
+
+footer picture:first-child {
+  margin: 2.5em 0 0em;
+}
+
+footer picture:first-child img {
+  background-color: #458c7e;
+}
+
+footer nav {
+  margin: 1.1em 0;
+}
+
+footer nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 1em;
+}
+
+footer nav li a {
+  color: #458c7e;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+
+footer picture:last-child {
+  margin: 2.5em 0;
+}
+
+footer picture:last-child img {
+  padding: 0 .5em;
 }
 /*# sourceMappingURL=index1.css.map */
