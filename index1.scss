@@ -47,13 +47,10 @@ main{
                     
                 }
                 li:last-child{
-                    padding: .7em;
                     font-family:$fraunces;
-                    &:hover{
-                        background-color: $Yellow;
-                        color: $test4;
-                        border-radius: 2.3rem;
-                    }
+                    background-color: $Yellow;
+                    color: $test4;
+                    border-radius: 2.3rem;
                 }
             }
         }

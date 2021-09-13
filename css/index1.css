@@ -85,11 +85,7 @@ main nav .pmenu:hover ul li {
 }
 
 main nav .pmenu:hover ul li:last-child {
-  padding: .7em;
   font-family: "Fraunces", serif;
-}
-
-main nav .pmenu:hover ul li:last-child:hover {
   background-color: #fad400;
   color: #23303e;
   border-radius: 2.3rem;
