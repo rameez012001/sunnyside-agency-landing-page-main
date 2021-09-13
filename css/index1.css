@@ -84,7 +84,12 @@ main nav .pmenu:hover ul li {
   font-family: "Barlow", sans-serif;
 }
 
-main nav .pmenu:hover ul li:hover {
+main nav .pmenu:hover ul li:last-child {
+  padding: .7em;
+  font-family: "Fraunces", serif;
+}
+
+main nav .pmenu:hover ul li:last-child:hover {
   background-color: #fad400;
   color: #23303e;
   border-radius: 2.3rem;
@@ -394,10 +399,6 @@ footer {
 
 footer picture:first-child {
   margin: 2.5em 0 0em;
-}
-
-footer picture:first-child img {
-  background-color: #458c7e;
 }
 
 footer nav {

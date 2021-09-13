@@ -43,7 +43,11 @@ main{
                 text-align: center;
                 li{
                     padding: .7em;
-                    font-family:$barlow;
+                    font-family: $barlow;
+                }
+                li:last-child{
+                    padding: .7em;
+                    font-family:$fraunces;
                     &:hover{
                         background-color: $Yellow;
                         color: $test4;
@@ -203,9 +207,6 @@ footer{
     background-color:hsla(168, 82%, 74%, 0.747);
     picture:first-child{
         margin: 2.5em 0 0em;
-        img{
-        background-color: $ft;
-        }
     }
     nav{
         margin: 1.1em 0;
